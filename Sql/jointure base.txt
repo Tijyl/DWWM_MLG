@@ -1,0 +1,3 @@
+SELECT (ce qu y faut chercher)
+FROM Table 1 (celle ou il y a le plus de chose demander)
+INNERJOIN "table2"(endroit ou il y a le reste) ON "table1"."idreliant (table 1 et 2) = table2."idreliant"

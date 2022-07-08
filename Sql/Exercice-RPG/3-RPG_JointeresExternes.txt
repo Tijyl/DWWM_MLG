@@ -1,0 +1,32 @@
+JOINTEURES EXTERNES
+
+1) Récupérer tous les types d'armes même ceux qui n'ont pas d'arme associée
+
+SELECT typearme.libelle,arme.nom 
+FROM typearme 
+LEFT JOIN arme ON arme.idTypeArme=typearme.idTypeArme;
+
+SELECT typearme.libelle,arme.nom
+FROM arme
+RIGHT JOIN typearme ON arme.idTypeArme=typearme.idTypeArme;
+
+2) Récupérer toutes les armes et afficher le personnage qui les utilise, ordonnées par le level minimum
+
+SELECT *
+FROM arme
+LEFT JOIN personnage ON personnage.idarmeutilise=arme.idarme
+ORDER BY levelMin
+
+
+3) Récupérer toutes les armes et voir les personnages qui les ont en leur possession(table dispose), avec RIGHT JOIN(ordonné), on doit voir afficher :
+	- idArme
+	- Arme
+	- Personnage
+
+SELECT *
+FROM personnage
+RIGHT JOIN dispose ON dispose.idPersonnage=personnage.idPersonnage
+RIGHT JOIN arme ON arme.idArme=dispose.idArme
+ORDER BY arme.idArme
+
+

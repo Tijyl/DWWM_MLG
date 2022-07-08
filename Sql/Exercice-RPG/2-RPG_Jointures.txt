@@ -1,0 +1,129 @@
+Les jointures internes
+
+1) Récupérer tous les personnages et leur classe
+
+SELECT * 
+FROM personnage
+INNER JOIN classe ON personnage.idClasse = classe.idClasse
+
+
+2) Récupérer toutes les armes et leur type, doit seulement afficher :
+	- le nom de l'arme
+	- le levelMin
+	- les degats
+	- le libelle
+	- estDistance
+
+SELECT nom, levelMin,libelle,estDistance
+FROM arme	
+INNER JOIN typearme ON arme.idTypeArme=typearme.idTypeArme
+
+
+3) Récupérer le nom des personnages et le nom de leur classe
+
+SELECT classe.nom , personnage.nom 
+FROM personnage 
+INNER JOIN classe On personnage.idClasse = classe.idClasse;
+
+4) Récupérer l'arme qui est utilisée par chaque personnage et le type d'arme (2 jointures)
+	- nom personnage
+	- nom arme
+	- le levelMin
+	- les degats
+	- le libelle => Changer en "Type arme"
+	- estDistance
+
+SELECT personnage.nom, arme.nom, levelMin, degat, libelle AS "Type d'arme", estDistance 
+FROM arme 
+INNER JOIN personnage ON personnage.idArmeUtilise = arme.idArme 
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme;
+
+***************************************************************************************************************************
+
+Jointures et filtres
+
+5) Récupérer toutes les armes de tous les personnages:
+	- nom => Changer en "Nom Personnage"
+	- le level
+	- arme => Changer en "Arme"
+	- levelMin
+
+SELECT arme.nom AS "Arme" , personnage.nom AS "Nom Personnage", levelMin,level 
+FROM arme 
+INNER JOIN personnage on personnage.idArmeUtilise=arme.idArme;
+
+6) Récupérer toutes les armes qui ne sont pas à distance :
+	- nom
+	- levelMin
+	- degat
+	- le libelle => Changer en type
+
+SELECT arme.nom,levelmin,degat,libelle AS "Type"
+FROM arme 
+INNER JOIN typearme on typearme.idTypeArme=arme.idTypeArme
+where estdistance false
+
+7) Récupérer l'arme utilisée par chaque guerrier :
+	- nom => Changer en "Personnage"
+	- nom (table arme) => Changer en "Arme utilsée"
+	- le libelle => Changer en "Type d'arme"
+
+
+SELECT personnage.nom AS "Personnage",arme.nom AS "Arme utilisée", libelle AS "Type arme"
+FROM arme 
+INNER JOIN personnage on personnage.idArmeUtilise=arme.idArme 
+INNER JOIN typearme on typearme.idTypeArme=arme.idArme 
+INNER JOIN classe on classe.idClasse=personnage.idClasse 
+WHERE classe.nom="Guerrier";
+
+**************************************************************************************************************************
+
+Jointures, calculs et tris
+
+8) Récupérer toutes les armes dont disposent les joueurs ayant le level 10, doit s'afficher
+	- idPersonnage
+	- nom (personnage) => Changer en Perso
+	- nom (arme) => Changer en Arme
+	- libelle => Changer en Type
+
+SELECT idPersonnage, personnage.nom AS "Perso", arme.nom AS "Arme", libelle AS "Type" 
+FROM arme 
+INNER JOIN personnage ON personnage.idArmeUtilise = arme.idArme 
+INNER JOIN typearme ON typearme.idTypeArme = arme.idTypeArme 
+WHERE personnage.level >= 10;
+
+9) Récupérer toutes les armes dont disposent les joueurs ayant le levl 10, triées par id Personnage
+
+SELECT idPersonnage, personnage.nom AS "Perso", arme.nom AS "Arme", libelle AS "Type" 
+FROM arme 
+INNER JOIN personnage ON personnage.idArmeUtilise = arme.idArme 
+INNER JOIN typearme ON typearme.idTypeArme = arme.idTypeArme 
+WHERE order by personnage.idpersonnage
+
+10) Récupérer toutes les armes dont disposent les joueurs ayant le levl 10, triées par id Personnage (à l'envers)
+
+SELECT idPersonnage, personnage.nom AS "Perso", arme.nom AS "Arme", libelle AS "Type" 
+FROM arme 
+INNER JOIN personnage ON personnage.idArmeUtilise = arme.idArme 
+INNER JOIN typearme ON typearme.idTypeArme = arme.idTypeArme 
+WHERE order by personnage.idpersonnage desc
+
+11) Récupérer la moyenne des dégats des armes à distance
+
+SELECT AVG(arme.degat) 
+FROM arme 
+INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme 
+WHERE estDistance true;
+
+12) Récupérer tous les personnages disposant d'une arme d'un type commençant par "a"
+
+SELECT personnage.* , libelle 
+FROM personnage 
+INNER JOIN arme ON arme.idArme = personnage.idArmeUtilise 
+INNER JOIN typearme ON typearme.idTypeArme = arme.idTypeArme 
+WHERE libelle LIKE "A%";
+
+**************************************************************************************************************************
+
+	
+
