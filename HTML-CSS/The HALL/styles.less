@@ -1,0 +1,364 @@
+// =========================GENERAL=========================
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    margin:0;
+    padding: 0;
+    line-height: 1.8;
+    font-family:'Roboto', sans-serif;
+    background-color: grey;
+    color:white
+}
+img {
+    max-width: 100%;
+}
+p, h1, h2, h3, ul{
+    margin:0;
+    padding: 0;
+}
+h1, h2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+h3{
+    text-transform: uppercase;
+}
+
+// =============================================HEADER=============================================
+
+header{
+    background-image: url(img/bg_header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+// NAV =================================================================================== 
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 33%;
+        li{
+            padding-top: 1em;
+            a {
+                padding: 2em;
+                text-transform: uppercase;
+                &:hover {
+                    transition: 0.4s;
+                    color:rgb(209, 188, 142);
+                    border-bottom: rgb(209, 188, 142) solid 2px;
+                }
+            }
+        }
+    }
+
+// HEADER TEXT ========================================================================
+
+    .headerText{
+        display: flex;
+        flex-direction: column;
+        padding: 5em 0 5em 0;
+        color:white;
+        width: 35%;
+        text-align: right;
+        margin-right: 24.5em;
+        h2{
+            font-size: 4em;
+            letter-spacing: 4px;
+        }
+        p{
+            padding: 1em;
+        }
+        a {
+            padding: 0.5em 1em 0.5em 1em;
+            background-color: rgb(209, 188, 142);
+            border-radius: 20px;
+            letter-spacing: 3px;
+        }
+    }
+
+// FIXED SOCIAL ========================================================================
+
+    .social{
+        background-color: rgb(51, 50, 50);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        top:53%;
+        i {
+            padding: 0.5em;
+            color: grey;
+            border: grey solid 1px;
+            margin: 0.2em 0 0.2em 0;
+            &:hover {
+                color:rgb(209, 188, 142) ;
+                border: rgb(209, 188, 142) solid 1px;
+            }
+        }
+    }
+}
+
+// =============================================MAIN=============================================================
+
+main {
+
+// ABOUT GO.HALL =======================================================
+
+    .black{
+        background-color: rgb(51, 50, 50);
+        h2{
+            span{
+                color: rgb(209, 188, 142);
+            }
+        }
+        h3{
+            width: 20%;
+        }
+        .flexBlack {
+            display: flex;
+            justify-content: space-between;
+            .londonHall{
+                background-image: url(img/london_hall.jpg);
+                background-repeat: no-repeat;
+                width: 25%;
+                position: relative;
+                p{
+                    position: absolute;
+                    top: 90%;
+                    left: 10%;
+                    padding: 0.5em 1em 0.5em 1em;
+                    background-color: rgb(209, 188, 142);
+                    width: auto;
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                padding: 0.5em 0 0.5em 0;
+            }
+            div:first-child{
+                width: 70%;
+            }
+            .right{
+                color:rgb(209, 188, 142);
+                text-align: justify;
+                padding-left: 4em;
+                border-left: 3px rgb(209, 188, 142) solid;               
+            }
+        }
+    }
+
+// ABOUT PROJECTS ==============================================================
+    .yellow{
+        background-color: rgb(209, 188, 142);
+        h2{
+            span{
+                color:rgb(51, 50, 50);
+            }
+        }
+        .flexProjects{
+            display: flex;
+            div{
+                width: 35%;
+            }
+            .paris{
+                background-image: url(img/paris.jpg);
+            }
+            .london{
+                background-image: url(img/london.jpg);
+            }
+            .paris, .london{
+                background-repeat: no-repeat;
+                padding-bottom: 16em;
+                position: relative;
+                h3{
+                    width: 65%;
+                    padding: 1em;
+                    text-transform: uppercase;
+                    span{
+                        color: rgb(209, 188, 142);
+                    }
+                }
+                p{
+                    position: absolute;
+                    background-color: rgb(51, 50, 50);
+                    width:40%;
+                    padding-left: 0.5em;
+                    top:85%;
+                    left: 10%;
+                    text-transform: uppercase;
+                }
+            }
+            .twelve{
+                width: 50%;
+                p, h3{
+                    padding: 0.5em 0 0.5em 0;
+                    color: black;
+                }
+                h3{
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    span{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+// ABOUT SERVICES ====================================================================
+
+    .services{
+        background-color: rgb(51, 50, 50);
+        h2{
+            span{
+                color: rgb(209, 188, 142);
+            }
+        }
+        .flexServices{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                i{
+                    color:rgb(209, 188, 142);
+                    font-size: 5em;
+                    padding-bottom: 1rem;
+                }
+                p{
+                    font-size: 0.8em;
+                    color: grey;
+                }
+                a{
+                    background-color: grey;
+                    color: rgb(209, 188, 142);
+                    border-left: rgb(209, 188, 142) solid 1px;
+                    text-align: end;
+                    padding: 0 1em 0 0.5em;
+                    text-transform: uppercase;
+                    width: 60%;
+                    margin-top: 1em;
+                    &:hover{
+                        transition: ease-in-out 0.4s;
+                        background-color: rgb(209, 188, 142);
+                        color: grey;
+                    }
+                }
+            }
+            .codepen{
+                a{
+                    margin-top: 5em;
+                }
+            }
+            .map{
+                img{
+                    border-top: 1px solid rgb(209, 188, 142);
+                    border-bottom: 1px solid rgb(209, 188, 142);
+                    padding:1em 0 1em 0;
+                }
+                p{
+                    color:white;
+                }
+            }
+        }
+
+    }
+
+    .black, .yellow, .services {
+        padding: 3em;
+    }
+}
+
+// =============================================FOOTER=================================================================
+
+footer{
+    background-image: url(img/bg_footer.jpg);
+    .flexFooter{
+        display: flex;
+        padding: 3em;
+        >div{
+            background-image: url(img/visuelgauche.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 17em;
+            p{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2em;
+                padding: 0.5em;
+                width: 50%;
+                letter-spacing: 3px;
+            }
+        }
+        form{
+            background-color: rgba(0,0,0,0.8);
+            width: 50%;
+            button{
+                padding: 0.5em;
+                background-color: rgb(209, 188, 142);
+                border-radius: 5px;
+                border-bottom: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            input{
+                background-color: rgba(0,0,0,0.8);
+                border: none;
+                color:white;
+                font-size: 1em;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                border-bottom: 0.5px white solid;
+                padding: 0.5em;
+                width: 95%;
+                margin: auto;
+                &:last-child{
+                    border: none;
+                    width: 30%;
+                    margin: 0 0 0 0.2em;
+                }
+            }
+        }
+        div{
+            width: 50%;
+            .message{
+                padding-bottom: 14em;
+            }
+        }
+    }
+}
+
+
+
+ 

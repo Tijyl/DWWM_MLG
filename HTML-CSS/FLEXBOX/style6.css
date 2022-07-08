@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  height: 500px;
+}
+.col-right {
+  flex-basis: 30%;
+}
+.col-left {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.red {
+  background-color: rgb(231, 111, 111);
+  flex-grow: 1;
+}
+.green {
+  background-color: rgb(55, 233, 55);
+  flex-grow: 3;
+}
+.blue {
+  background-color: blue;
+}
+.box-outer {
+  padding: 30px;
+  margin: 2px;
+}
+.wrapper-inner {
+  display: flex;
+  height: 200px;
+  
+}
+.col-right-inner {
+  flex-basis: 30%;
+}
+.col-left-inner {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-inner {
+  margin: 2px;
+}
+.rose {
+  background-color: rgb(248, 98, 211);
+  flex-grow: 1;
+}
+.aqua {
+  background-color: rgb(101, 237, 255);
+  flex-grow: 1;
+}
+.gris {
+  background-color: grey;
+}

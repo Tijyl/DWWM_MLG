@@ -1,0 +1,48 @@
+.contenair {
+  background-color: #038197;
+  height: 350px;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  background-color: aqua;
+  color: white;
+  margin: 1em;
+  padding: 1em;
+}
+Aside {
+  display: flex;
+  height: 200px;
+  width: 500px;
+}
+Aside .vert {
+  background-color: #5fbd5f;
+  color: white;
+  margin-left: 1em;
+  flex-grow: 1;
+}
+Aside .orange {
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  margin-left: 2em;
+  flex-grow: 2;
+  width: auto;
+  justify-content: space-around;
+}
+Aside .orange div {
+  background-color: #f7be55;
+  color: white;
+  display: flex;
+  padding: 2em;
+  margin-top: 100px;
+}
+footer {
+  display: flex;
+  background-color: aqua;
+  color: white;
+  margin: 1em;
+  padding: 1em;
+}

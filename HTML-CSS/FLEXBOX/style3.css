@@ -1,0 +1,50 @@
+.contenair {
+  background-color: #038197;
+  height: 400px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.double {
+  display: flex;
+  margin: 10px;
+}
+.double .orange {
+  background-color: #ff9100;
+  flex-grow: 1;
+  margin-right: 10px;
+  padding-bottom: 3rem;
+}
+.double .gris {
+  background-color: gray;
+  flex-grow: 1;
+}
+.jauneorange {
+  background-color: orange;
+  margin: 10px;
+  width: 680px;
+  padding-bottom: 3rem;
+}
+.quatre {
+  display: flex;
+  justify-content: space-evenly;
+}
+.quatre div {
+  background-color: #ff9100;
+  width: 100%;
+  margin: 10px;
+  padding-bottom: 3rem;
+}
+.jaune {
+  display: flex;
+  justify-content: space-evenly;
+}
+.jaune div {
+  background-color: orange;
+  justify-content: space-between;
+}
+.vert {
+  background-color: green;
+  height: 50px;
+  margin: 10px;
+}

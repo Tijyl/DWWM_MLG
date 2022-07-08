@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+}
+main header {
+  background-color: #06b8b8;
+  color: white;
+  height: 5vh;
+  margin: 3px;
+}
+main .rouge {
+  background-color: red;
+  color: white;
+  height: 20vh;
+  margin: 3px;
+}
+main .content {
+  display: flex;
+  flex-direction: row;
+}
+main .content .vert {
+  background-color: green;
+  flex-grow: 2;
+  height: 65vh;
+  margin: 3px;
+  color: white;
+}
+main .content .violet {
+  background-color: #8b1396;
+  flex-grow: 1;
+  margin: 3px;
+  color: white;
+}
+main footer {
+  background-color: #504e4e;
+  height: 7vh;
+  margin: 3px;
+  color: white;
+  margin-bottom: 5px;
+}

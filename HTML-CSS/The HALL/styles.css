@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  font-family: 'Roboto', sans-serif;
+  background-color: grey;
+  color: white;
+}
+img {
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+h3 {
+  text-transform: uppercase;
+}
+header {
+  background-image: url(img/bg_header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+header ul li {
+  padding-top: 1em;
+}
+header ul li a {
+  padding: 2em;
+  text-transform: uppercase;
+}
+header ul li a:hover {
+  transition: 0.4s;
+  color: #d1bc8e;
+  border-bottom: #d1bc8e solid 2px;
+}
+header .headerText {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0 5em 0;
+  color: white;
+  width: 35%;
+  text-align: right;
+  margin-right: 24.5em;
+}
+header .headerText h2 {
+  font-size: 4em;
+  letter-spacing: 4px;
+}
+header .headerText p {
+  padding: 1em;
+}
+header .headerText a {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #d1bc8e;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+header .social {
+  background-color: #333232;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  top: 53%;
+}
+header .social i {
+  padding: 0.5em;
+  color: grey;
+  border: grey solid 1px;
+  margin: 0.2em 0 0.2em 0;
+}
+header .social i:hover {
+  color: #d1bc8e;
+  border: #d1bc8e solid 1px;
+}
+main .black {
+  background-color: #333232;
+}
+main .black h2 span {
+  color: #d1bc8e;
+}
+main .black h3 {
+  width: 20%;
+}
+main .black .flexBlack {
+  display: flex;
+  justify-content: space-between;
+}
+main .black .flexBlack .londonHall {
+  background-image: url(img/london_hall.jpg);
+  background-repeat: no-repeat;
+  width: 25%;
+  position: relative;
+}
+main .black .flexBlack .londonHall p {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #d1bc8e;
+  width: auto;
+  text-transform: uppercase;
+}
+main .black .flexBlack p {
+  padding: 0.5em 0 0.5em 0;
+}
+main .black .flexBlack div:first-child {
+  width: 70%;
+}
+main .black .flexBlack .right {
+  color: #d1bc8e;
+  text-align: justify;
+  padding-left: 4em;
+  border-left: 3px #d1bc8e solid;
+}
+main .yellow {
+  background-color: #d1bc8e;
+}
+main .yellow h2 span {
+  color: #333232;
+}
+main .yellow .flexProjects {
+  display: flex;
+}
+main .yellow .flexProjects div {
+  width: 35%;
+}
+main .yellow .flexProjects .paris {
+  background-image: url(img/paris.jpg);
+}
+main .yellow .flexProjects .london {
+  background-image: url(img/london.jpg);
+}
+main .yellow .flexProjects .paris,
+main .yellow .flexProjects .london {
+  background-repeat: no-repeat;
+  padding-bottom: 16em;
+  position: relative;
+}
+main .yellow .flexProjects .paris h3,
+main .yellow .flexProjects .london h3 {
+  width: 65%;
+  padding: 1em;
+  text-transform: uppercase;
+}
+main .yellow .flexProjects .paris h3 span,
+main .yellow .flexProjects .london h3 span {
+  color: #d1bc8e;
+}
+main .yellow .flexProjects .paris p,
+main .yellow .flexProjects .london p {
+  position: absolute;
+  background-color: #333232;
+  width: 40%;
+  padding-left: 0.5em;
+  top: 85%;
+  left: 10%;
+  text-transform: uppercase;
+}
+main .yellow .flexProjects .twelve {
+  width: 50%;
+}
+main .yellow .flexProjects .twelve p,
+main .yellow .flexProjects .twelve h3 {
+  padding: 0.5em 0 0.5em 0;
+  color: black;
+}
+main .yellow .flexProjects .twelve h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+main .yellow .flexProjects .twelve h3 span {
+  color: white;
+}
+main .services {
+  background-color: #333232;
+}
+main .services h2 span {
+  color: #d1bc8e;
+}
+main .services .flexServices {
+  display: flex;
+  justify-content: space-between;
+}
+main .services .flexServices div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .services .flexServices div i {
+  color: #d1bc8e;
+  font-size: 5em;
+  padding-bottom: 1rem;
+}
+main .services .flexServices div p {
+  font-size: 0.8em;
+  color: grey;
+}
+main .services .flexServices div a {
+  background-color: grey;
+  color: #d1bc8e;
+  border-left: #d1bc8e solid 1px;
+  text-align: end;
+  padding: 0 1em 0 0.5em;
+  text-transform: uppercase;
+  width: 60%;
+  margin-top: 1em;
+}
+main .services .flexServices div a:hover {
+  transition: ease-in-out 0.4s;
+  background-color: #d1bc8e;
+  color: grey;
+}
+main .services .flexServices .codepen a {
+  margin-top: 5em;
+}
+main .services .flexServices .map img {
+  border-top: 1px solid #d1bc8e;
+  border-bottom: 1px solid #d1bc8e;
+  padding: 1em 0 1em 0;
+}
+main .services .flexServices .map p {
+  color: white;
+}
+main .black,
+main .yellow,
+main .services {
+  padding: 3em;
+}
+footer {
+  background-image: url(img/bg_footer.jpg);
+}
+footer .flexFooter {
+  display: flex;
+  padding: 3em;
+}
+footer .flexFooter > div {
+  background-image: url(img/visuelgauche.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 17em;
+}
+footer .flexFooter > div p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 0.5em;
+  width: 50%;
+  letter-spacing: 3px;
+}
+footer .flexFooter form {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+}
+footer .flexFooter form button {
+  padding: 0.5em;
+  background-color: #d1bc8e;
+  border-radius: 5px;
+  border-bottom: none;
+  color: white;
+  text-transform: uppercase;
+}
+footer .flexFooter form input {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  font-size: 1em;
+}
+footer .flexFooter form div {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px white solid;
+  padding: 0.5em;
+  width: 95%;
+  margin: auto;
+}
+footer .flexFooter form div:last-child {
+  border: none;
+  width: 30%;
+  margin: 0 0 0 0.2em;
+}
+footer .flexFooter div {
+  width: 50%;
+}
+footer .flexFooter div .message {
+  padding-bottom: 14em;
+}

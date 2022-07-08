@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3em 0 0 3em;
+}
+img{
+    max-width: 100%;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    width: 50%;
+    grid-template-areas: 
+    "au mer bmw"
+    "mus fer cam";
+    :nth-child(1){
+        grid-area: au;
+    }
+    :nth-child(2){
+        grid-area: mer;
+    }
+    :nth-child(3){
+        grid-area: bmw;
+    }
+    :nth-child(4){
+        grid-area: mus;
+    }
+    :nth-child(5){
+        grid-area: fer;
+    }
+    :nth-child(6){
+        grid-area: cam;
+    }
+}
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.4fr;
+    position: relative;
+    border: 1px rgb(0, 0, 0) solid;
+    justify-items: center;
+    grid-template-areas: 
+    "img img"
+    "img img"
+    "pays porte"
+    "essence prix"
+    "vendeur vendeur";
+    :nth-child(1){
+        grid-area: img;
+        margin-bottom: 3em;
+    }
+    :nth-child(3){
+        grid-area: pays;
+    }
+    :nth-child(4){
+        grid-area: porte;
+    }
+    :nth-child(5){
+        grid-area: essence;
+    }
+    :nth-child(6){
+        grid-area: prix;
+    }
+    :nth-child(7){
+        grid-area: vendeur;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(114, 38, 38);
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+    }
+    h2{
+        position: absolute;
+        top:42%;
+        left:3%;
+        padding:0.8em 0 0.8em 0;
+        color: white;
+        width: 250px;
+        text-align: center;
+        background-color: rgb(7, 7, 75);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

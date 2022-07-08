@@ -1,0 +1,47 @@
+.contenair{
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    margin: 1em auto;
+    display: grid;
+    gap: 30px;
+    padding: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tete tete tete tete"
+    "lateral un deux trois"
+    "lateral principal principal principal"
+    "lateral principal principal principal"
+    "footer footer footer footer";
+    div{
+        background-color: red;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        padding: 5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    :nth-child(1){
+        grid-area: tete;
+    }
+    :nth-child(2){
+        grid-area: lateral;
+
+    }
+    :nth-child(3){
+        grid-area: principal;
+    }
+    :nth-child(4){
+        grid-area: footer;
+    }
+    :nth-child(5){
+        grid-area: un;
+    }
+    :nth-child(6){
+        grid-area: deux;
+    }
+    :nth-child(7){
+        grid-area: trois;
+    }
+}

@@ -1,0 +1,31 @@
+.contenair {
+  background-color: #038197;
+  height: 450px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+.orange {
+  background-color: orange;
+  height: 50px;
+  margin: 5px;
+}
+.content {
+  margin: 5px;
+  display: flex;
+}
+.content .gris {
+  background-color: grey;
+  flex-grow: 1;
+  height: 300px;
+  margin-right: 5px;
+}
+.content .jaune {
+  background-color: yellow;
+  flex-grow: 2;
+}
+.vert {
+  margin: 5px;
+  background-color: green;
+  height: 50px;
+}

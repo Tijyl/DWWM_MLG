@@ -1,0 +1,41 @@
+/* ---------------------------------GENERAL--------------------------------- */
+
+* 
+{
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0 auto;
+    line-height: 25px;
+    background-color: rgb(189, 190, 94);
+}
+.container 
+{
+    width:960px;
+    margin: auto;
+}
+
+/* ---------------------------------HEADER--------------------------------- */
+
+header 
+{
+    background-image: url("img/header.jpg");
+    text-align: center;
+    padding: 3em 0 3em 0;
+}
+header p, .intro 
+{
+    color:rgb(189, 190, 94);
+
+}
+header p 
+{
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+/* ---------------------------------MAIN--------------------------------- */
+
+.

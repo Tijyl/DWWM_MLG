@@ -1,0 +1,46 @@
+.contenair {
+  background-color: #ffffff;
+  height: 600px;
+  width: 650px;
+  border: #5757e7 solid 3px;
+  display: flex;
+  flex-direction: column;
+}
+.rouge {
+  border: red solid 3px;
+  margin: 5px;
+  padding: 2rem;
+}
+.bordel {
+  display: flex;
+}
+.bordel .petit {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.bordel .petit div {
+  border: #5757e7 solid 3px;
+  width: 100%;
+  margin: 5px;
+  padding-bottom: 3rem;
+}
+.bordel .grand {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 400px;
+  justify-content: space-around;
+}
+.bordel .grand div {
+  border: #0c0cad solid 3px;
+  width: 100%;
+  margin: 5px;
+  padding-bottom: 3rem;
+}
+.vert {
+  border: green solid 3px;
+  height: 50px;
+  margin: 5px;
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,45 @@
+.contenair {
+  background-color: #038197;
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.orange {
+  background-color: orange;
+  height: 50px;
+  margin: 5px;
+}
+.content {
+  margin: 5px;
+  display: flex;
+  flex-direction: row ;
+}
+.content .gris {
+  background-color: grey;
+  flex-grow: 1;
+  margin-right: 2rem;
+}
+.content .tiroire {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.content .tiroire .jaune {
+  background-color: yellow;
+  padding: 2rem;
+}
+.content .tiroire .bleu {
+  background-color: blue;
+  padding: 2rem;
+  margin: 1em 0;
+}
+.content .tiroire .bleuvert {
+  background-color: #06b957;
+  padding: 2rem;
+}
+.vert {
+  background-color: green;
+  height: 50px;
+  margin: 5px;
+}

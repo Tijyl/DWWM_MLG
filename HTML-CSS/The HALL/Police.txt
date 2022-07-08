@@ -1,0 +1,8 @@
+RobotoCondensed Bold
+Roboto Regular
+RobotoCondensed Light
+
+i.fab.fa-connectdevelop
+i.fab.fa-codepen
+
+Les icones sociaux restent collés lors du scroll.
