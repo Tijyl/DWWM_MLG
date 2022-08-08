@@ -79,7 +79,6 @@
 // • Si la saisie n’est pas un chiffre, l’utilisateur doit recommencer
 
 let readline = require("readline-sync");
-// let saisie = parseInt(readline.question("Quel nombre voulez-vous saisir : "));
 let saisie = readline.question("Quel nombre voulez-vous saisir : ");
 
 let chiffreSaisie = false;
