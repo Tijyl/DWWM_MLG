@@ -79,13 +79,15 @@
 // • Si la saisie n’est pas un chiffre, l’utilisateur doit recommencer
 
 let readline = require("readline-sync");
-let saisie = parseInt(readline.question("Quel nombre voulez-vous saisir : "));
+// let saisie = parseInt(readline.question("Quel nombre voulez-vous saisir : "));
+let saisie = readline.question("Quel nombre voulez-vous saisir : ");
 
 let chiffreSaisie = false;
 
 while(!chiffreSaisie){
     if(isNaN(saisie)){
         console.log("Veuillez recommencer la saisie, vous devez saisir un nombre :");
+        let saisie = readline.question("Quel nombre voulez-vous saisir : ");
     }else{
         console.log("C'est un chiffre");
         chiffreSaisie = true;
