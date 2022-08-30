@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
-import { AiFillCloseCircle, AiFillCodepenCircle } from "react-icons/ai";
+import { AiFillCloseCircle} from "react-icons/ai";
 import { AiFillEdit } from 'react-icons/ai';
 
 // ..........................TACHE  MODIFIER SUPPRIMER...................................
