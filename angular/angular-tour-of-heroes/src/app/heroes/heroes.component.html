@@ -1,15 +1,14 @@
-<h2>Mes Heros</h2>
+<h2>Mes Héros : </h2>
 
 <div>
-  <label for="new-hero">Nom du héros: </label>
-  <input id="new-hero" #heroName />
+  <label for="new-hero">Nom des héros: </label>
+  <!-- <input id="new-hero" #heroName /> -->
 
   <!-- (click) passes input value to add() and then clears the input -->
-  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+  <!-- <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
     Ajouter
-  </button>
+  </button> -->
 </div>
-
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
@@ -18,3 +17,4 @@
     <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
   </li>
 </ul>
+<app-hero-form></app-hero-form>

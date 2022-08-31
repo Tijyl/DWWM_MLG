@@ -9,10 +9,10 @@ import { Hero } from '../hero';
 })
 export class HeroFormComponent {
 
-  powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+  powers = ['Intélligent', 'Rapide',
+            'Bricoleur', 'bagarreur'];
 
-  model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
+  model = new Hero(18, 'Sonic', this.powers[1], 'Rapide');
 
   submitted = false;
 
