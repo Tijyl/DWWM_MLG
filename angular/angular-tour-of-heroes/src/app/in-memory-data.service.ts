@@ -18,7 +18,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 19, name: 'Blaze' },
       { id: 20, name: 'Silver' }
     ];
-    return {heroes};
+    return { heroes };
   }
 
   // Overrides the genId method to ensure that a hero always has an id.

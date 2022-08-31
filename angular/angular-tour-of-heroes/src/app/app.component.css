@@ -3,6 +3,7 @@ h1 {
   margin-bottom: 0;
   text-align: center;
 }
+
 nav a {
   padding: 1rem;
   text-decoration: none;
@@ -19,7 +20,7 @@ nav a:hover {
   color: white;
   background-color: #42545C;
 }
+
 nav a:active {
   background-color: black;
 }
-
