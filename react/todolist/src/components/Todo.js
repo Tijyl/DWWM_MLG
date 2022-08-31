@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
-import { AiFillCloseCircle} from "react-icons/ai";
+import { AiFillCloseCircle } from "react-icons/ai";
 import { AiFillEdit } from 'react-icons/ai';
 
 // ..........................TACHE  MODIFIER SUPPRIMER...................................
@@ -22,7 +22,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     if (edit.id) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
-    // ..................................COMPLETE..........................................
+    // ..................................COMPLETER..........................................
     return todos.map((todo, index) => (
         <div
             className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
@@ -31,6 +31,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>
                 {todo.text}
             </div>
+            {/* // ..................................ICONE.......................................... */}
             <div className='icons'>
                 <AiFillEdit
                     onClick={() => setEdit({ id: todo.id, value: todo.text })}
