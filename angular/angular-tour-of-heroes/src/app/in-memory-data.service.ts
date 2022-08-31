@@ -9,10 +9,10 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
       { id: 12, name: 'Dr. Nice' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
+      { id: 13, name: 'Sonic' },
+      { id: 14, name: 'Tails' },
+      { id: 15, name: 'Knuckles' },
+      { id: 16, name: 'Amy Rose' },
       { id: 17, name: 'Dynama' },
       { id: 18, name: 'Dr. IQ' },
       { id: 19, name: 'Magma' },
