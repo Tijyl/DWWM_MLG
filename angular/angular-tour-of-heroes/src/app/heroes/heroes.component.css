@@ -4,6 +4,8 @@
   list-style-type: none;
   padding: 0;
   width: 15em;
+  margin-left: 600px;
+
 }
 
 input {
@@ -33,6 +35,7 @@ input {
   border-radius: 4px;
   display: block;
   width: 100%;
+  text-align: center;
 }
 
 .heroes a:hover {

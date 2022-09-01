@@ -1,7 +1,7 @@
 <h2>Mes Héros : </h2>
 
 <div>
-  <label for="new-hero">Nom des héros: </label>
+  <!-- <label for="new-hero">Nom des héros: </label> -->
   <!-- <input id="new-hero" #heroName /> -->
 
   <!-- (click) passes input value to add() and then clears the input -->
@@ -12,9 +12,8 @@
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    {{hero.name}}
     </a>
-    <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
   </li>
 </ul>
 <app-hero-form></app-hero-form>
